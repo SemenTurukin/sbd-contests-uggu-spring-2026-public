@@ -1,0 +1,20 @@
+{
+  "deny_by_default": true,
+  "allows": [
+    {
+      "from": "digital_mine",
+      "to": "tcb_mission_control",
+      "action": "start_mission"
+    },
+    {
+      "from": "other_ai",
+      "to": "tcb_security_monitor",
+      "action": "ai_suggest"
+    },
+    {
+      "from": "regulator",
+      "to": "tcb_security_monitor",
+      "action": "status"
+    }
+  ]
+}

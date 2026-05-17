@@ -1,0 +1,16 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {"component": {"type": "application", "name": "abu-other"}},
+  "components": [
+    {"type": "library", "name": "numpy", "version": "runtime", "bom-ref": "pkg:pypi/numpy"},
+    {"type": "library", "name": "fastapi", "version": "runtime", "bom-ref": "pkg:pypi/fastapi"},
+    {"type": "library", "name": "pydantic", "version": "runtime", "bom-ref": "pkg:pypi/pydantic"}
+  ],
+  "dependencies": [
+    {"ref": "pkg:pypi/numpy", "dependsOn": []},
+    {"ref": "pkg:pypi/fastapi", "dependsOn": ["pkg:pypi/pydantic"]},
+    {"ref": "pkg:pypi/pydantic", "dependsOn": []}
+  ]
+}
